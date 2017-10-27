@@ -1,0 +1,114 @@
+<html>
+<head><title>Quote It App</title>
+	<style>
+		*{
+  margin:0;
+  padding:0;
+  align-self: center;
+}
+
+body{
+  background: #3a9fe5;
+  color: #fff;
+}
+
+
+
+a{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:40em;
+  width:50em;
+  padding:1em;
+  align-self: center;
+}
+
+a{
+  text-decoration:none;
+  color:#000;
+  background:#ffff00;
+  display:block;
+  align-self: center;
+  height:40em;
+  width:40em;
+  padding:1em;}
+  a:hover, a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;}
+
+textarea {
+  border: thin solid #ffff00;
+  width: 650px;
+  height: 90px
+  floats: center;
+  font-size: 30px;
+  background: #ffff00;
+}
+ .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin-left: 11cm;
+    cursor: pointer;
+}
+
+.button {padding: 30px 80px;}
+.button:hover, a:focus{
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;}
+
+	</style>
+</head>
+<body><br><br>
+ <br><br><br><br><br><br><br><center><font size="50tx" color="#00000">
+<h1>Quote it App!</h1></font></center><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<button class="button"  onclick="Quote()">refresh</button><button class="button"  onclick="saveQoute()">Save Qoutation</button><br><br><br><br><br><br>
+   <center> <a href="#">
+      <font size="10">Quotation:</font>
+      
+
+      <center><textarea wrap="virtual" placeholder="Enter quotation here.." id="ramil" rows="15" cols="20" maxlength="500"></textarea> 
+</center>
+    </a></center>
+
+  
+  <script>
+
+function saveQoute(){
+  var Quotation = localStorage.getItem('ramil'), 
+      arr = [];
+  if (!Quotation) { Quotation = ''; }  
+  arr = Quotation.split(',');
+
+  arr.push(document.getElementById("ramil").value);
+  Quotation = arr.join(' ');
+  localStorage.setItem("ramil", Quotation);
+}
+function Quote() {
+  var quotes = localStorage.getItem('ramil');
+  document.getElementById('ramil').innerHTML =""+quotes.substr(1);
+}
+
+</script>
+    </body>
+    </html>
+
+    
