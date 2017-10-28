@@ -1,5 +1,7 @@
 <html>
 <head><title>Quote It App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<style>
 		*{
   margin:0;
@@ -10,6 +12,8 @@
 body{
   background: #3a9fe5;
   color: #fff;
+   background-size: 80px 60px;
+    background-repeat: no-repeat;
 }
 
 
@@ -19,8 +23,8 @@ a{
   color:#000;
   background:#ffc;
   display:block;
-  height:40em;
-  width:50em;
+  height:5em;
+  width:5em;
   padding:1em;
   align-self: center;
 }
@@ -31,8 +35,8 @@ a{
   background:#ffff00;
   display:block;
   align-self: center;
-  height:40em;
-  width:40em;
+  height:17em;
+  width:16em;
   padding:1em;}
   a:hover, a:focus{
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -46,10 +50,10 @@ a{
 
 textarea {
   border: thin solid #ffff00;
-  width: 650px;
-  height: 90px
+  width: 250px;
+  height: 15px
   floats: center;
-  font-size: 30px;
+  font-size: 15px;
   background: #ffff00;
 }
  .button {
@@ -59,12 +63,12 @@ textarea {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 35px;
-    margin-left: 11cm;
+    font-size: 15px;
+    margin-left: 6cm;
     cursor: pointer;
 }
 
-.button {padding: 30px 80px;}
+.button {padding: 10px 15px;}
 .button:hover, a:focus{
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
@@ -76,16 +80,15 @@ textarea {
   z-index:5;}
 
 	</style>
-</head>
-<body><br><br>
- <br><br><br><br><br><br><br><center><font size="50tx" color="#00000">
-<h1>Quote it App!</h1></font></center><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<button class="button"  onclick="Quote()">refresh</button><button class="button"  onclick="saveQoute()">Save Qoutation</button><br><br><br><br><br><br>
+</head><br><br><br>
+<body><center><font size="4tx" color="#00000">
+<h1>Quote it App!</h1></font></center><br><br>
+<button class="button"  onclick="Quote()">refresh</button><button class="button"  onclick="saveQoute()">Save Qoutation</button><br><br>
    <center> <a href="#">
-      <font size="10">Quotation:</font>
+      <font size="5">Quotation:</font>
       
 
-      <center><textarea wrap="virtual" placeholder="Enter quotation here.." id="ramil" rows="15" cols="20" maxlength="500"></textarea> 
+      <center><textarea wrap="virtual" placeholder="Enter quotation here.." id="ramil" rows="13" cols="500" maxlength="500"></textarea> 
 </center>
     </a></center>
 
